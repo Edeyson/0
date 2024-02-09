@@ -4,6 +4,7 @@
 <dnn:DnnCssInclude Priority="15" ID="footer3" runat="server" FilePath="assets/css/footer--3.css" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:stylesheet" />
 
 <div class="siteContainer">
+holaaaa
 
     <!-- ___include header___ -->
 
@@ -21,5 +22,3 @@
     <!--#include file="includes/_footer/footer_3.ascx"-->
     
 </div>
-
-
