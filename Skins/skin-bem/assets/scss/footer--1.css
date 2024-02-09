@@ -1,0 +1,126 @@
+.footer-net {
+  max-width: 1164px;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+.footer-net__container {
+  border-top: 1px solid #D2D2D2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-net__container--contact iconify-icon {
+  margin-bottom: -2px;
+  font-size: 14px;
+}
+.footer-net__logo {
+  width: 130px;
+}
+.footer-net__link {
+  color: var(--net-color-primary) !important;
+  font-size: 14px;
+}
+.footer-net__link:hover {
+  color: var(--net-color-secundary) !important;
+}
+.footer-net__text {
+  color: var(--net-color-primary);
+  line-height: 25px;
+  font-size: 14px;
+}
+.footer-net__list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.footer-net__list--row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer-net__list--center {
+  align-items: center;
+}
+.footer-net__item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.footer-net__logos {
+  justify-content: space-between;
+}
+
+@media (min-width: 1025px) {
+  .footer-net {
+    margin: 0 auto;
+  }
+  .footer-net__container, .footer-net__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-net__container--column, .footer-net__list--column {
+    flex-direction: column;
+  }
+  .footer-net__container--redes, .footer-net__list--redes {
+    gap: 5px;
+  }
+  .footer-net__container--center, .footer-net__list--center {
+    align-items: center;
+  }
+  .footer-net__container {
+    padding: 10px;
+  }
+  .footer-net::before {
+    border-top: 1px solid #D2D2D2;
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+}
+hr.hrfooter {
+  border-top: 1px solid #D2D2D2;
+}
+
+/*footer 1*/
+@media (max-width: 1024px) {
+  .footer-net__container {
+    padding: 40px 25px 15px;
+    gap: 16px;
+  }
+  .footer-net__link {
+    font-size: 14px;
+  }
+  .footer-net__list {
+    gap: 5px;
+  }
+  .footer-net__list--logos {
+    gap: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  .footer-net {
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  .footer-net__container, .footer-net__list {
+    min-height: 50px;
+    padding: 20px 0;
+    gap: 15px;
+  }
+  .footer-net__container--logos, .footer-net__list--logos {
+    gap: 25px;
+  }
+  .footer-net__item--subpages {
+    position: relative;
+  }
+  .footer-net__item--subpages:not(.footer-net__item:last-child)::after {
+    content: "";
+    background: #e6e6e6;
+    height: 22px;
+    width: 1px;
+    position: absolute;
+    right: -8px;
+  }
+}/*# sourceMappingURL=footer--1.css.map */

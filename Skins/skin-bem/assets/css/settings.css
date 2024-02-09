@@ -1,0 +1,329 @@
+:root {
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secundary: "Roboto", sans-serif;
+}
+
+:root {
+  --net-color-primary: #777;
+  --net-color-secundary: #007BFF;
+  --net-color-sucess: #198754;
+  --net-color-danger: #dc3545;
+  --net-color-warning: #ffc107;
+  --net-color-info: #0dcaf0;
+  --net-color-light: #f8f9fa;
+  --net-color-dark: #343a40;
+  /*Color de botones*/
+  --net-btn-bg-primary: #007BFF;
+  --net-btn-bg-primary-hover: #0571dc;
+  /*esta configuracion de abajo aplica unicamente a header transparente*/
+  --color-header-link: var(--net-color-primary);
+  --color-header-link-hover: var(--net-color-secundary);
+  --color-header-transparent-link: #fff;
+  --color-header-transparent-link-hover: #fff;
+  /*Color de links para paginas*/
+  --net-color-link: #007BFF;
+  --net-color-link-hover: #0571dc;
+}
+
+html, body, .wrapper {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-family-primary);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+}
+
+em, small {
+  letter-spacing: 0;
+}
+
+.DNNEmptyPane {
+  display: none;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.overflow-disabled {
+  overflow: hidden;
+}
+
+li, p {
+  line-height: 1.5em;
+}
+
+.paneOutline {
+  border: 1px dashed #ccc;
+}
+
+a {
+  border: 0;
+}
+a img {
+  border: 0;
+}
+
+#dnn_dnnLOGO_imgLogo {
+  max-width: 150px;
+  max-height: 40px;
+}
+@media (min-width: 1025px) {
+  #dnn_dnnLOGO_imgLogo {
+    max-width: 190px;
+    max-height: inherit;
+  }
+}
+
+abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, time, tt, u, ul, var, video {
+  border: 0;
+}
+
+.TB_Wrapper {
+  box-sizing: content-box;
+}
+.TB_Wrapper * {
+  box-sizing: content-box;
+}
+
+.dnnActionMenu {
+  box-sizing: content-box;
+}
+.dnnActionMenu *, .dnnActionMenu:after, .dnnActionMenu:before {
+  box-sizing: content-box;
+}
+
+.dnn_mact {
+  box-sizing: content-box;
+}
+.dnn_mact *, .dnn_mact:after, .dnn_mact:before {
+  box-sizing: content-box;
+}
+
+[id*=ControlPanel] {
+  box-sizing: content-box;
+}
+[id*=ControlPanel] *, [id*=ControlPanel]:after {
+  box-sizing: content-box;
+}
+
+[class*=RadAjaxPanel] *, [class*=Digital] * {
+  box-sizing: content-box;
+}
+
+html, li {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+ol.list-unstyled {
+  list-style: none;
+  margin: 0;
+}
+ol.list-unstyled > li {
+  list-style: none;
+  margin: 0;
+}
+
+ul.list-unstyled {
+  list-style: none;
+  margin: 0;
+}
+ul.list-unstyled > li {
+  list-style: none;
+  margin: 0;
+}
+ul.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+ol {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  list-style-type: disc;
+}
+ul li li {
+  list-style-type: circle;
+}
+
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.nav li {
+  list-style: none !important;
+}
+
+a {
+  outline: 0 !important;
+}
+
+ul#myTab {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  font-size: 13px;
+}
+
+.CommandButton, .Head, .Normal, .NormalBold, .NormalDisabled, .NormalRed, .NormalTextBox, .SubHead, .SubSubHead {
+  font-family: var(--font-family-primary);
+}
+
+a:hover, a:link, a:visited {
+  font-family: var(--font-family-primary);
+}
+body, h1, h2, h3, h4, h5, h6, input, table, td, th {
+  font-family: var(--font-family-primary);
+}
+
+.SubHead {
+  color: #000;
+}
+
+Body #Form {
+  height: 100%;
+}
+
+embed, img, object {
+  max-width: 100%;
+}
+
+[class*=map] img, [class*=Map] img, [id*=map] img, [id*=Map] img, table img {
+  max-width: none !important;
+}
+
+img {
+  height: auto;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  color: #333;
+  font-weight: 700;
+}
+
+small {
+  font-size: 12px;
+}
+
+a:active, a:link, a:visited {
+  text-decoration: none;
+  color: var(--net-color-link);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--net-color-link-hover);
+}
+
+p {
+  margin: 0;
+}
+
+ol li > ol li {
+  list-style-type: lower-latin;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #494949;
+  line-height: 1.3em;
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+#breadcrumb {
+  font-family: var(--font-family-primary);
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px dashed;
+  border-color: #ccc;
+  background-color: transparent;
+  padding: 5px 0;
+  margin: 0;
+  display: block;
+}
+#breadcrumb a {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 11px;
+  color: #626262;
+}
+#breadcrumb a:first-child {
+  font-family: var(--font-family-primary);
+  font-size: 11px !important;
+  font-weight: 400;
+  color: #7b7d82;
+  margin: 0;
+}
+#breadcrumb img, #breadcrumb span {
+  margin-left: 10px;
+}/*# sourceMappingURL=settings.css.map */

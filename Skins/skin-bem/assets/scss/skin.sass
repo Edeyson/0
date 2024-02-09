@@ -1,0 +1,76 @@
+/* estilos iniciales */
+@import "settings"
+/* end estilos iniciales */
+
+/* estilos de bloques/elementos Reutilizables */
+@import "utilities"
+/* end estilos de bloques/elementos Reutilizables */
+
+/* pagina internet explorer */
+@import "ie"
+/* end pagina internet explorer */
+ 
+/* pagina de login */
+@import "login"
+/* end pagina de login */
+        
+/* pagina de register */
+@import "register"
+/* end pagina de register */
+    
+/* pagina 404 */
+@import "404"
+/* end pagina 404 */
+
+
+/* estilos para grilla(paneles)*/
+.containerPanels
+    padding-bottom: 20px
+    max-width: 2060px
+    width: 100%
+    @media (min-width: 1025px)
+        margin: auto
+.siteContainer
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    align-items: stretch
+.mainPanels
+    &__floatAgency
+        display: flex
+        flex-direction: column
+        gap: 20px
+@media (min-width: 1025px)
+    .mainPanels
+        position: relative
+        &__floatPane
+            width: 70%
+            max-width: 1140px
+            position: absolute
+            z-index: 1
+            left: 0
+            right: 0
+            top: 80px
+            margin: auto
+        &__floatAgency
+            display: grid
+            justify-content: space-around
+            grid-template-columns: 70% 30%
+            position: absolute
+            left: 0
+            right: 0
+            top: 30px
+            margin: auto
+            width: 75%
+            max-width: 1170px
+    .dnnEditState 
+        .mainPanels__floatPane,.mainPanels__floatAgency
+            position: initial
+        .mainPanels__floatAgency
+            display: block
+
+._navbar__item--children ul
+    order: 2
+
+
+/* end estilos para grilla(paneles)*/

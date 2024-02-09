@@ -1,0 +1,41 @@
+@import "footer"
+/*footer 2*/
+@media (max-width:1024px) 
+    .footer-net
+        padding: 10px 25px
+        &__container
+            border-top: none
+            &--subpages
+                border-top: 1px solid #D2D2D2
+                padding-top: 20px
+                margin-top: 20px
+        &__list
+            row-gap: 4px
+            &--logos
+                justify-content: space-between
+                flex-wrap: wrap
+                row-gap: 15px
+@media (min-width:1025px)
+    .footer-net
+        padding-bottom: 20px
+        &__item
+            &--subpages
+                position: relative
+                &:not(.footer-net__item:last-child)
+                    &::after
+                        content: ''
+                        background: #e6e6e6e6
+                        height: 22px
+                        width: 1px
+                        position: absolute
+                        right: -8px
+        &::before
+            content: initial
+        &__container
+            &--contact
+                border-top: none
+        &__list
+            &--subpages
+                gap: 15px
+            &--logos
+                gap: 25px

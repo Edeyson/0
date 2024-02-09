@@ -1,0 +1,206 @@
+.header-container
+    background: #fff
+.header 
+    display: flex
+    flex-direction: column
+    padding: 0 0
+    max-width: 1164px
+    @media (max-width:1024px)
+        box-shadow: 0px 0px 8px rgb(0 0 0 / 20%)
+    &--fixed
+        position: fixed
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 99999
+        .header__includes
+            border-bottom: 0.1px solid #e6e6e6
+        &::after
+            content: ""
+            position: fixed
+            z-index: 0
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: #d8d8d8b5
+    &__includes
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center   
+        @media (max-width:1024px)
+            height: 55px
+            padding: 0px 20px
+            background: #fff 
+    &__burger
+        height: 24px
+        width: 24px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        transform: rotate(0deg)
+        transition-duration: 0.5s
+    &__burger--active
+        position: absolute
+        right: 22px
+        top: 22px
+        transform: rotate(360deg)
+        z-index: 1        
+    &__burger--active &__bar:first-child
+            transform: rotate(45deg)
+            position: absolute
+    &__burger--active &__bar:nth-child(2)
+            display: none
+    &__burger--active &__bar:last-child
+            transform: rotate(-45deg)
+    &__bar 
+        height: 1.5px
+        width: 100%
+        background: var(--net-color-dark)
+        transition: 0.5s
+    &__container 
+        display: none
+        &--active
+            width: 280px
+            right: 0
+            top: 0
+            z-index: 1
+            position: fixed
+            display: flex
+            flex-direction: column
+            overflow-y: scroll
+            overflow-x: hidden
+            max-height: 90vh
+            height: 100%
+            background: #fff                
+            &::before 
+                content: ""
+                position: fixed
+                left: inherit
+                right: 0
+                top: 0
+                z-index: -1
+                width: 280px
+                height: 100vh
+                background: #fff
+            &::-webkit-scrollbar
+                width: 0px
+    &__menu 
+        width: 100%
+        &--top
+            @media (max-width:1024px)
+                content: ""
+                height: 0.5px
+                width: 280px
+                background: #e6e6e6
+                display: block 
+        &--logo
+            @media (max-width:1024px)
+                padding: 20px 20px
+/*navbar styles*/
+._navbar
+    &__list
+        margin-bottom: 0
+        @media (max-width:1024px)
+            padding-right: 10px
+    &__item
+        min-height: 50px
+        @media (max-width:1024px) 
+            padding-left: 13px
+            margin-bottom: 5px
+        width: 100%
+        display: flex
+        align-items: center
+        &--children
+            flex-direction: column
+            margin-bottom: 0
+        &--largeicon img
+            width: 16px
+            height: 16px
+        &--largeicon a
+            gap: 5px
+        &--active >div>
+            ._navbar__link
+                @media (max-width:1024px)
+                    border-left: 2px solid transparent 
+                    color: var(--net-color-primary)!important 
+                    border-radius: 10px
+                    background-color: rgb(193 193 193 / 12%)
+    &__link,&__link:visited
+        width: 100%
+        min-height: 44px
+        padding: 0
+        padding-left: 2px
+        display: flex
+        align-items: center
+        border-left: 2px solid transparent
+        color: var(--net-color-primary)!important
+        gap: 7px
+        @media (max-width:1024px)
+            padding:10px 16px
+        &:hover
+            text-decoration: none
+            background: #F7F7F7 
+            color: var(--net-color-secundary)!important
+    &__link,
+    &__link:visited,
+    &__link+span
+        @media (max-width:1024px)
+            color: var(--net-color-primary)
+            font-size: 14px
+            &:hover
+                border-left: 2px solid transparent 
+                color: var(--net-color-primary) 
+                border-radius: 10px
+                background-color: rgb(193 193 193 / 12%)
+    &__container-link-submenu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+    &__btn-page
+        padding: 10px 20px
+        transition-duration: 0.2s
+        iconify-icon
+            transition-duration: 0.2s
+        &--active iconify-icon
+            transform: rotate(180deg)
+    &__submenu 
+        width: 100%
+        display: none
+        @media (max-width:1024px)
+            padding-left: 13px
+        &--active
+            display: block
+            margin-left: 0
+
+    @media (min-width:1025px)
+        &__submenu
+            border-radius: 5px
+            box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f
+            ._navbar__item            
+                width: 100%
+                max-width: 125px
+                &:first-child:hover,
+                &:first-child:hover ._navbar__link
+                    border-radius: 5px 5px 0 0
+                &:last-child:hover,
+                &:last-child:hover ._navbar__link
+                    border-radius: 0 0 5px 5px
+                &--children
+                    &:hover > ul
+                            left: 81%
+                            top: 0
+                    .fa-angle-down:before
+                        content: "\f105"
+        ._navbar__item--last
+            ._navbar__submenu
+                ._navbar__item--children
+                    &:hover > ul
+                        left: -114%
+                        top: 0
+                .fa.fa-angle-down:before
+                    content: "\f104"

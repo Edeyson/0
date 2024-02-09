@@ -1,0 +1,575 @@
+@charset "UTF-8";
+em,
+small {
+    letter-spacing: 0
+}
+
+body{
+    font-size:1rem;
+}
+li,
+p {
+    line-height: 1.5em
+}
+
+/* .DNNEmptyPane {
+    display: none!important
+} */
+
+.paneOutline {
+    border: 1px dashed #ccc
+}
+
+a,
+a img,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+time,
+tt,
+u,
+ul,
+var,
+video {
+    border: 0
+}
+
+.TB_Wrapper,
+.TB_Wrapper *,
+.dnnActionMenu,
+.dnnActionMenu *,
+.dnnActionMenu:after,
+.dnnActionMenu:before,
+.dnn_mact,
+.dnn_mact *,
+.dnn_mact:after,
+.dnn_mact:before,
+[id*=ControlPanel],
+[id*=ControlPanel] *,
+[id*=ControlPanel]:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+[class*=RadAjaxPanel] *,
+[class*=Digital] * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+html,
+li{
+    font-size: 15px
+}
+.li-min{
+    font-size: 12px
+}
+p {
+    font-size: 15px
+}
+ol.list-unstyled,
+ol.list-unstyled>li,
+ul.list-unstyled,
+ul.list-unstyled>li {
+    list-style: none;
+    margin: 0
+}
+
+ul.row {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+ul li {
+    list-style-type: disc
+}
+
+ul li li {
+    list-style-type: circle
+}
+
+ol li {
+    list-style-type: decimal;
+    list-style-position: inside
+}
+
+.nav li {
+    list-style: none!important
+}
+
+a {
+    outline: 0!important
+}
+
+ul#myTab {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    color: #333;
+    font-size: 13px
+}
+
+
+.SubHead {
+    color: #000
+}
+
+Body #Form {
+    height: 100%
+}
+
+embed,
+img,
+object {
+    max-width: 100%
+}
+
+[class*=map] img,
+[class*=Map] img,
+[id*=map] img,
+[id*=Map] img,
+table img {
+    max-width: none!important
+}
+
+img {
+    height: auto
+}
+
+em {
+    font-style: italic
+}
+
+strong {
+    color: #333;
+    font-weight: 700
+}
+
+small {
+    font-size: 12px
+}
+
+a:active,
+a:link,
+a:visited {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+p {
+    margin: 0 0 20px
+}
+
+ol li>ol li {
+    list-style-type: lower-latin
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #494949;
+    line-height: 1.3em;
+    margin: 0 0 10px;
+    font-weight: 400
+}
+
+h1 {
+    font-size: 1.875rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem
+}
+
+h4 {
+    font-size: 1.125rem
+}
+
+h5 {
+    font-size: 0.875rem
+}
+
+h6 {
+    font-size: 0.75rem
+}
+
+@media screen and (min-width:300px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media screen and (min-width:720px) {
+    html {
+        font-size: 18px
+    }
+}
+
+#breadcrumb {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px dashed;
+    border-color: #ccc;
+    background-color: transparent;
+    padding: 5px 0;
+    margin: 0;
+    display: block
+}
+
+#breadcrumb a {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 11px;
+    color: #626262
+}
+
+#breadcrumb a:first-child {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 11px!important;
+    font-weight: 400;
+    color: #7b7d82;
+    margin: 0
+}
+
+#breadcrumb img,
+#breadcrumb span {
+    margin-left: 10px
+}
+
+/* ------------------------------------------------------- login pane ------------------------------------------------------------ */
+
+.wrapper-container-login .logo-login {
+    width: max-content;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.wrapper-container-login .heading_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wrapper-container-login #dnn_loginPane .heading_wrapper h2 {
+    margin: 0px;
+    background-color: #8f8f8c;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+.wrapper-container-login #dnn_loginPane .heading_wrapper h2 span {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 !important;
+    font-family: 'Quicksand', sans-serif;
+}
+.loginContent .dnnLabel {
+    float: none;
+    width: 100%;
+    text-align: left;
+    color: #202020;
+}
+
+.LoginPanel {
+    width: 100%;
+    float: none;
+    padding: 11px 20px 17px;
+    background: #fff;
+    border: 0;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 0.0625rem 1rem 0px rgb(0 0 0 / 38%);
+}
+.loginContent .dnnLabel {
+    float: none;
+    width: 100%;
+    text-align: left;
+    color: #202020;
+}
+
+.dnnLoginService input[type="text"], .dnnLoginService input[type="password"] {
+    width: 100%;
+    border-radius: 0px;
+    height: 36px;
+    min-width: 100%;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #202020;
+    margin-bottom: 16px;
+}
+
+span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
+    display: none;
+}
+
+
+.LoginPanel .dnnForm .dnnFormItem a.dnnPrimaryAction{
+        box-shadow: none;
+        border-radius: .25rem;
+        background: none;
+        background-color: var(--color-3);
+        width: 100%;
+        text-shadow: none;
+        text-transform: lowercase;
+        margin: 0px;
+        border: 1px solid var(--color-3);
+        transition: 0.5s;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 0;
+        font-weight: 400;
+        background-color: #7b7d82;
+}
+.LoginPanel .dnnForm .dnnFormItem a.dnnSecondaryAction {
+    box-shadow: none;
+    border-radius: 0px;
+    background: none;
+    width: 100%;
+    text-shadow: none;
+    text-transform: lowercase;
+    margin: 0px;
+    border: 0;
+    transition: 0.5s;
+    margin-top: 0px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #007bff;
+}
+.LoginPanel .dnnForm .dnnFormItem:nth-child(4) 
+a:nth-child(3) {
+    display: none;
+}
+.loginContent .dnnFormItem:nth-child(3), .loginContent .dnnFormItem:nth-child(5) .dnnFormLabel{
+    display: none;
+}
+
+/* ------------------------------------------------------- fin login pane ------------------------------------------------------------ */
+
+.bx-wrapper .bx-controls-direction a {
+    z-index: auto!important;
+}
+
+
+/* btn Toggle: */
+
+.darkmode-toggle {
+    background: #100f2c;
+    height: 2rem;
+    position: fixed;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    top: 8.6rem;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 9999;
+    text-align: center;
+    left: 0;
+  }
+  .darkmode-toggle--white {
+    background: #fff;
+  }
+
+/*end btn Toggle: */
+
+
+/* darkStyle= */
+
+.darkmode--activated .cms-flex__main_container {
+    background: black !important;
+}
+
+.darkmode--activated .header-container1 header {
+    background: #2d2d2d;
+}
+
+.darkmode--activated .header-container1 .container-header .item2 ul li a,
+.darkmode--activated .header-container1 .container-header .item3 ul li a {
+    color: #fff;
+}
+.darkmode--activated 
+.widget-net-mobileNew--notabs .widget-tab-container {
+    background: #2d2d2d;
+    color:#fff!important
+}
+
+.darkmode--activated img{
+    filter: invert(100%);
+}
+
+.darkmode--activated .h6, .h5, .h3, .h2, .h1 {
+    color: white;
+}
+
+.darkmode--activated .header-container1 header {
+    background: black; 
+}
+
+.darkmode--activated header.active .navcontainer {
+    background: black;
+}
+.darkmode--activated .cardtype02-data {
+    filter: invert(100%);
+}
+
+.darkmode--activated p {
+    color: white;
+}
+
+.darkmode--activated .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+}
+
+.darkmode--activated .h2titulo {
+    color: white !important;
+}
+
+.darkmode--activated strong {
+    color: white;
+}
+
+.darkmode--activated .cms-flex-accordion a.title-btn {
+    color: white;
+}
+
+.darkmode--activated .fa.fa-facebook, .fa.fa-twitter {
+    color: black
+}
+
+.darkmode--activated .fa.fa-xing, .fa.fa-xing-square, .fa.fa-youtube {
+    color: black
+}
+
+.darkmode--activated .fa.fa-linkedin {
+    color: black
+}
+
+.darkmode--activated .fa.fa-adn, .fa.fa-bitbucket, .fa.fa-bitbucket-square, .fa.fa-dropbox, .fa.fa-flickr, .fa.fa-instagram, .fa.fa-stack-overflow {
+    color: black
+}
+
+.darkmode--activated header.masthead {
+    filter: invert(100%);
+}
+
+.darkmode--activated header.masthead-viajero-senior {
+    filter: invert(100%);
+}
+
+.darkmode--activated header.masthead-lagosol {
+    filter: invert(100%);
+}
+
+.darkmode--activated header.masthead-planear {
+    filter: invert(100%);
+}
+
+.darkmode--activated header.masthead-agrandado {
+    filter: invert(100%);
+}
+
+.darkmode--activated header.masthead-preguntas {
+    filter: invert(100%);
+}
+
+.darkmode--activated header.masthead-living {
+    filter: invert(100%);
+}
+
+.section-content__pane:has( #dnn_ContentPane){
+    min-height: 135px;
+}

@@ -1,0 +1,47 @@
+<module type="DNNHTML" version="09.08.00.00"><contentKey /><moduleID>38606</moduleID><alignment /><alltabs>false</alltabs><border /><cachemethod /><cachetime>1200</cachetime><color /><containersrc /><displayprint>false</displayprint><displaysyndicate>false</displaysyndicate><displaytitle>true</displaytitle><enddate>0001-01-01T00:00:00</enddate><footer /><header /><iconfile /><inheritviewpermissions>true</inheritviewpermissions><modulepermissions><permission><permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode><permissionkey>EDIT</permissionkey><allowaccess>true</allowaccess><rolename>Administrators</rolename></permission></modulepermissions><title>Text/HTML</title><startdate>0001-01-01T00:00:00</startdate><uniqueId>d3405ceb-5b9a-4ce6-96b9-85dc3b94658d</uniqueId><visibility>Maximized</visibility><cultureCode /><content type="DNNHTML" version="09.08.00.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div id=&amp;quot;dataContact&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;item1&amp;quot;&amp;gt;
+&amp;lt;h4&amp;gt;Get in touch&amp;lt;/h4&amp;gt;
+
+&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;hr /&amp;gt;
+&amp;lt;div class=&amp;quot;item2&amp;quot;&amp;gt;
+&amp;lt;h4&amp;gt;The Office&amp;lt;/h4&amp;gt;
+
+&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;b&amp;gt;&amp;lt;i class=&amp;quot;fa fa-map-marker&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Address:&amp;lt;/b&amp;gt; 1234 Street Name, City Name, United States&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;b&amp;gt;&amp;lt;i class=&amp;quot;fa fa-phone&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Phone:&amp;lt;/b&amp;gt; (123) 456-7890&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;b&amp;gt;&amp;lt;i class=&amp;quot;fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Email:&amp;lt;/b&amp;gt; mail@example.com&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;hr /&amp;gt;
+&amp;lt;div class=&amp;quot;item3&amp;quot;&amp;gt;
+&amp;lt;h4&amp;gt;Business Hours&amp;lt;/h4&amp;gt;
+
+&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;Monday - Friday 9am to 5pm&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Saturday - 9am to 2pm&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Sunday - Closed&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;#dataContact ul{ margin-left:0  } #dataContact ul li { list-style: none;  }
+#dataContact ul li a,#dataContact p{ color:#777777 }
+#dataContact h4 { font-size:20px; color:#333333 }
+#dataContact b { color:#757575}
+#dataContact 
+hr {
+    background-image: -webkit-linear-gradient(left,transparent,#dbdbdb,transparent);
+    background-image: linear-gradient(to right,transparent,#dbdbdb,transparent);
+    border: 0;
+    height: 1px;
+    margin: 22px 0;
+}
+div#dataContact .item2 ul li:nth-child(3) a {
+    color: #6060ff;
+}
+
+&amp;lt;/style&amp;gt;
+]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content><modulesettings /><tabmodulesettings /><definition>DNN_HTML</definition><moduledefinition>Text/HTML</moduledefinition></module>

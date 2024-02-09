@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NetSuiteConfigs>
+  <NetSuiteConfig PortalId="1254" OutOfService="False" AirAdvancedPurchaseDays="1" AirFlexDateEnabled="True" HotelAdvancedPurchaseDays="1" HotelsMaxAgeChild="11" TravelExtraAdvancedPurchaseDays="1" TravelExtraMaxDaysAllowedSearch="21" MaxPassengerSearch="9" PromoCodeAllowed="True" EnableHotelStaticContent="True" EnableHotelNewFrontEnd="False" GoogleMapsApiKey="AIzaSyDgA1MdudKVZiko9hUFVYkWX326E0eX-UE" />
+  <NetSuiteAdvancePurchase>
+    <AdvancePurchase AirAdvancedPurchaseDays="1" HotelAdvancedPurchaseDays="1" TravelExtraAdvancedPurchaseDays="1" VehicleAdvancedPurchaseDays="1" BranchCode="" />
+  </NetSuiteAdvancePurchase>
+  <NetSuiteProfiles>
+    <Userservice Name="DemoOwner" Address="SCL, CL. Jean Jaures 695 3 B, 111, Pruebas" Phone="49641900" PhoneAlt="" />
+    <BrachCodes />
+  </NetSuiteProfiles>
+</NetSuiteConfigs>

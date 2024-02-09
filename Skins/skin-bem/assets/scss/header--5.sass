@@ -1,0 +1,60 @@
+@import "header--2"
+@media (min-width:1025px) 
+    /* transparent active*/
+    .header-container 
+        position: fixed
+        z-index: 1
+        top: 0
+        height: 72px
+        width: 100%
+        box-shadow: none
+        transition: all 0.5s ease-in-out 0.02s
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0))
+        &--bottom
+            font-weight: 500
+        ._navbar__link
+            color: var(--color-header-transparent-link)!important
+            border-bottom: 2px solid transparent
+            &__item
+                &--active
+                    >div>._navbar__link    
+                        border-bottom: 2px solid var(--color-header-transparent-link)!important
+                    ._navbar__link
+                        color: var(--net-color-secundary) !important
+        ._navbar__item--active
+                ._navbar__link
+                    border-bottom: 2px solid var(--color-header-transparent-link)!important
+        ._navbar__link:hover
+            color: var(--color-header-transparent-link-hover)!important
+            border-bottom: 2px solid var(--color-header-transparent-link-hover)!important
+        ._navbar__submenu
+            ._navbar__link
+                color: var(--color-header-link)!important
+            ._navbar__link:hover
+                color: var(--color-header-link-hover)!important
+            
+
+    /* transparent disabled*/
+    .header-container--transparent 
+        position: fixed
+        top: 0
+        background: #fff
+        width: 100%
+        left: 0
+        z-index: 9999
+        transition: all 0.5s ease-in-out 0.02s
+        ._navbar__link
+            color: var(--color-header-link)!important
+        ._navbar
+            &__item
+                &--active
+                    >div>._navbar__link
+                        border-bottom: 2px solid var(--color-header-link-hover)!important
+                    ._navbar__link
+                        border-bottom: 2px solid var(--color-header-link-hover)!important
+
+            ._navbar__link:hover
+                border-bottom: 2px solid var(--color-header-link-hover)!important
+                color: var(--color-header-link-hover)!important
+            ._navbar__link:hover
+                color: var(--color-header-link)!important

@@ -1,0 +1,44 @@
+{
+    "menu_top": [
+      { "id": 1, "nombre": " servicio@netactica.com ", "url": "/" },
+      { "id": 3, "nombre": " 3148596507 ", "url": "/" },
+      {
+        "id": 2,
+        "nombre": "submenu",
+        "url": "javascript:void(0)",
+        "child": [
+          { "id": "3", "nombre": "¿Quienes somos?", "url": "/quienes-somos" },
+          { "id": "4", "nombre": "Nuestra historia", "url": "/nuestra-historia" }
+        ]
+      }
+    ],
+    "menu_bottom": [
+      { "id": 1, "nombre": "Inicio", "url": "/" },
+      {
+        "id": 2,
+        "nombre": "headers",
+        "url": "#",
+        "child": [
+          { "id": "3", "nombre": "header 1", "url": "/header1" },
+          { "id": "4", "nombre": "header 2", "url": "/header2" },
+          { "id": "5", "nombre": "header 3", "url": "/" },
+          { "id": "6", "nombre": "header 4", "url": "/header4" },
+          { "id": "7", "nombre": "header 5", "url": "/header5" }
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Servicios",
+        "url": "#",
+        "child": [
+          { "id": "3", "nombre": "servicio 1", "url": "/quienes-somos" },
+          { "id": "4", "nombre": "servicio 2", "url": "/nuestra-historia" }
+        ]
+      },
+      { "id": 4, "nombre": "Contacto", "url": "/contacto", "child":[
+        {"id":"5","nombre":"Telefono","url":"/telefono"},
+        {"id":"6","nombre":"Correo electronico","url":"/correo"}
+      ] }
+    ]
+  }
+  

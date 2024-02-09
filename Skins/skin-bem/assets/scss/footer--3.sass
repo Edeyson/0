@@ -1,0 +1,47 @@
+@import "footer"
+@media (max-width:1024px) 
+    .footer-net
+        padding: 10px 25px
+        display: flex
+        flex-direction: column
+        gap: 20px
+        &__container
+            gap: 20px
+            padding: 20px 0
+        .net-accordion__title
+            border-bottom: 1px solid #e6e6e6
+        &__list
+            &--logos
+                justify-content: space-between
+                flex-wrap: wrap
+@media (min-width:1025px)
+    .footer-net
+        padding-bottom: 20px
+        &__container,
+        &__list
+            gap: 1px
+            &--logos
+                min-height: 50px
+            flex-direction: row
+            justify-content: space-between
+            &--column
+                flex-direction: column
+            &--redes
+                gap: 5px
+        &__container
+            padding: 10px 0 15px
+        &__link 
+            font-size: 14px
+        &::before 
+            content: initial
+    .net-accordion
+        &__body 
+            padding: 0 15px
+        &__container
+            padding: 10px 0px
+        &__title 
+            font-weight: 400
+            font-size: 18px
+            padding: 10px 0
+        &__body
+            padding: 0

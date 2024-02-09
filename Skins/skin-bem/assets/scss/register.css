@@ -1,0 +1,167 @@
+.registerFormPane a.dnnFormHelp {
+  right: auto;
+}
+.registerFormPane .dnnFormItem input[type=text],
+.registerFormPane .dnnFormItem input[type=password],
+.registerFormPane .dnnFormItem input[type=email],
+.registerFormPane .dnnFormItem input[type=tel],
+.registerFormPane .dnnFormItem select,
+.registerFormPane .dnnFormItem textarea {
+  max-width: none;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: #706967;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  background: whitesmoke;
+  border-radius: 5px;
+  padding: 5px 16px;
+  min-height: 48px;
+  border-style: solid;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(203 213 225/var(--tw-border-opacity)) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity)) !important;
+  --tw-shadow: 0 1px 2px 0rgb(0 0 0 / .05) !important;
+  --tw-shadow-colored: 0 1px 2px 0!important;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), var(--tw-shadow) !important;
+}
+.registerFormPane .dnnFormItem input[type=text]:focus,
+.registerFormPane .dnnFormItem input[type=password]:focus,
+.registerFormPane .dnnFormItem input[type=email]:focus,
+.registerFormPane .dnnFormItem input[type=tel]:focus,
+.registerFormPane .dnnFormItem select:focus,
+.registerFormPane .dnnFormItem textarea:focus {
+  border-color: var(--net-color-secundary) !important;
+}
+.registerFormPane div.dnnRegistrationForm .dnnForm {
+  width: 100%;
+}
+.registerFormPane div.dnnRegistrationForm .password-strength-container {
+  width: 100%;
+  max-width: none;
+}
+.registerFormPane div.dnnRegistrationForm {
+  min-width: auto;
+  max-width: 910px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 12px 13px #f0f0f0;
+}
+.registerFormPane .dnnSocialRegistration {
+  display: none;
+}
+.registerFormPane .DnnModule-Registration .dnnPrimaryAction,
+.registerFormPane .DnnModule-Registration .dnnPrimaryAction:hover {
+  box-shadow: none;
+  border-radius: 0.25rem;
+  background: none;
+  background-color: var(--net-btn-bg-primary);
+  width: 100%;
+  text-shadow: none;
+  text-transform: lowercase;
+  margin: 0px;
+  border: 1px solid var(--net-btn-bg-primary);
+  transition: 0.5s;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 180px;
+}
+.registerFormPane .DnnModule-Registration .dnnPrimaryAction:hover {
+  background-color: var(--net-btn-bg-primary-hover) !important;
+  border: 1px solid var(--net-btn-bg-primary-hover) !important;
+}
+.registerFormPane .dnnSecondaryAction {
+  box-shadow: none;
+  border-radius: 0px;
+  background: none;
+  background-color: #ffffff;
+  width: 100%;
+  text-shadow: none;
+  text-transform: lowercase;
+  margin: 0px;
+  border: 1px solid #C9CBCC;
+  transition: 0.5s;
+  margin-top: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: none;
+}
+.registerFormPane .dnnActions {
+  height: 60px;
+}
+.registerFormPane .dnnLabel > label {
+  margin-right: 7px;
+  font-weight: 400;
+}
+
+.register {
+  padding: 40px 10px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register__logo {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1025px) {
+  .registerFormPane div.dnnRegistrationForm {
+    max-width: 100%;
+  }
+  .registerFormPane .dnnLabel > label {
+    width: -moz-max-content;
+    width: max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .dnnFormItem > .dnnLabel {
+    width: -moz-max-content;
+    width: max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .dnnFormHelp, .dnnForm .dnnFormItem .dnnFormHelp, .dnnTooltip label .dnnFormHelp {
+    position: inherit;
+  }
+  .dnnTooltip {
+    position: initial !important;
+  }
+  .dnnTooltip .dnnFormHelpContent, .dnnHelperTip .dnnFormHelpContent {
+    width: 148px !important;
+    box-shadow: 0px 11px 10px rgba(0, 0, 0, 0.4117647059);
+  }
+}
+@media (min-width: 1024px) {
+  .dnnForm:nth-child(1) > div:nth-child(3) > div > div:nth-child(1) {
+    padding-right: 5px;
+  }
+  .dnnForm:nth-child(1) > div:nth-child(3) > div > div:nth-child(1), .dnnForm:nth-child(1) > div:nth-child(3) > div > div:nth-child(2) {
+    width: 50%;
+    display: inline-block;
+  }
+  .dnnRegistrationForm > div:nth-child(1) > div {
+    border-radius: 0;
+  }
+  .registerFormPane .dnnLabel {
+    float: none;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    color: #706967;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    z-index: 10;
+    width: auto;
+  }
+}/*# sourceMappingURL=register.css.map */

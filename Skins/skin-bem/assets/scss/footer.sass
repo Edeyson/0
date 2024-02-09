@@ -1,0 +1,71 @@
+.footer-net
+    max-width: 1164px
+    margin: 0 auto 20px
+    width: 100%
+    &__container
+        border-top: 1px solid #D2D2D2
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        flex-direction: column
+        gap: 20px
+        //iconos
+        &--contact
+            iconify-icon
+                margin-bottom: -2px
+                font-size: 14px
+    &__logo
+        width: 130px
+    &__link
+        color: var(--net-color-primary)!important
+        font-size: 14px
+    &__link:hover
+        color: var(--net-color-secundary)!important
+    &__text
+        color: var(--net-color-primary)
+        line-height: 25px
+        font-size: 14px
+    // ul style
+
+    &__list
+        display: flex
+        gap: 10px
+        flex-direction: column
+    &__list--row
+        flex-direction: row
+        flex-wrap: wrap
+    &__list--center
+        align-items: center
+    &__item
+        list-style-type: none
+        display: flex
+        align-items: center
+    &__logos
+        justify-content: space-between
+    // ul style 
+// .footer-net desk
+
+@media (min-width:1025px)
+    .footer-net
+        margin: 0 auto
+        &__container,
+        &__list
+            flex-direction: row
+            justify-content: space-between
+            &--column
+                flex-direction: column
+            &--redes
+                gap: 5px
+            &--center
+                align-items: center
+        &__container
+            padding: 10px
+        &::before 
+            border-top: 1px solid #D2D2D2
+            content: ''
+            width: 100%
+            position: absolute
+            left: 0
+hr.hrfooter
+    border-top: 1px solid #D2D2D2
+

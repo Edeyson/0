@@ -1,0 +1,80 @@
+.net-accordion__container {
+    padding: 10px;
+}
+
+.net-accordion__title{
+    padding: 10px 15px;
+    background-color: rgb(232, 232, 232);
+    position: relative
+}
+
+.net-accordion__title::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.net-accordion__child {
+    margin-bottom: 2px;
+    width: 100%;
+}
+.net-accordion__child.active .net-accordion__title::after{
+    content: '-';
+}
+.net-accordion__body{
+    padding: 0 0;
+    background-color: rgb(241, 241, 241);
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+.net-accordion__child.active .net-accordion__body{
+    display: block;
+    padding: 10px 15px;
+    height: max-content;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* //desk */
+
+@media (min-width:769px) {
+    .net-accordion__title::after{
+        content: "";
+    }
+    .net-accordion__body{
+        height: max-content;
+        padding: 10px 15px;
+        background-color: transparent;
+    }
+    .net-accordion__title{
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 17px;
+    }
+}

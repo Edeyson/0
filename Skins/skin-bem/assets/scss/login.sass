@@ -1,0 +1,127 @@
+// LOGIN SKIN
+.login
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    min-height: 100%
+    background: #ecf1f6
+    padding: 10px
+    &__body
+        width: 100%
+        max-width: 600px
+
+    &__logo,
+    &__footer
+        display: flex
+        justify-content: center
+        align-items: center
+    &__footer
+        margin-top: 10px
+        a
+            width: 120px
+            @media (min-width:780px)
+                width: 140px
+    &__logo
+        margin-bottom: 25px
+    &__pane
+        display: flex
+        justify-content: center
+        align-items: center
+    &__pane>div
+        width: 94%
+        max-width: 380px        
+    .DNNContainer_Title_h2.SpacingBottom
+        box-shadow: rgb(0 0 0 / 2%) 2.76726px 2.76726px 2.21381px 0px, rgb(0 0 0 / 3%) 6.6501px 6.6501px 5.32008px 0px, rgb(0 0 0 / 4%) 12.5216px 12.5216px 10.0172px 0px, rgb(0 0 0 / 4%) 22.3363px 22.3363px 17.869px 0px, rgb(0 0 0 / 5%) 41.7776px 41.7776px 33.4221px 0px, rgb(0 0 0 / 7%) 50px 50px 80px 0px
+        border-radius: 10px
+    .heading_wrapper 
+        padding-left: 0
+        padding-right: 0
+#dnn_loginPane .heading_wrapper h2 
+    margin: 0px
+    background-color: #fff
+    text-align: center
+    display: block
+    padding: 15px 0px
+    font-size: 20px
+    border-radius: 10px 10px 0 0
+#dnn_loginPane .heading_wrapper h2 span 
+    color: var(--net-color-dark)
+    font-size: 20px
+    margin: 0 !important
+    font-family: var(--font-family-primary)
+
+.LoginPanel 
+    width: 100%
+    float: none
+    padding: 11px 20px 17px
+    background: #fff
+    border: 0
+    border-top: 1px solid #ddd
+    border-radius: 0px 0px 10px 10px
+    .dnnForm .dnnFormItem a.dnnPrimaryAction
+        box-shadow: none
+        border-radius: 0.25rem
+        background: none
+        background-color: var(--net-btn-bg-primary) !important
+        width: 100%
+        text-shadow: none
+        margin: 0px
+        border: 1px solid var(--net-btn-bg-primary)
+        color: var(--net-color-light)
+        font-size: 16px
+        padding: 15px 0
+        font-weight: 400
+        &:hover
+            background-color: var(--net-btn-bg-primary-hover) !important
+    .dnnForm .dnnFormItem a.dnnSecondaryAction 
+        box-shadow: none
+        border-radius: 0px
+        background: none
+        width: 100%
+        text-shadow: none
+        margin: 0px
+        border: 0
+        transition: 0.5s
+        margin-top: 0px
+        font-weight: 500
+        text-transform: capitalize
+        font-size: 14px
+        color: var(--net-color-link)
+
+    .dnnForm .dnnFormItem:nth-child(4) a:nth-child(3) 
+        display: none
+
+.loginContent 
+    .dnnLabel 
+        float: none
+        width: 100%
+        text-align: left
+        color: #737373
+        margin-bottom: 4px        
+    .dnnFormItem:nth-child(3),
+    .dnnFormItem:nth-child(5) .dnnFormLabel
+        display: none
+.dnnLoginService 
+    input[type="text"],
+    input[type="password"] 
+        width: 100%
+        border-radius: 0px
+        height: 44px
+        min-width: 100%
+        border: 1px solid #ddd!important
+        box-shadow: 0 0 5px 0px #efefef91 !important
+        border-bottom: none
+        margin-bottom: 16px
+        border-radius: 4px
+        padding: 24px 10px
+.dnnFormItem 
+    input[type="text"]:active, 
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="password"]:active
+        outline: none
+span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe 
+    display: none
+.dnnClear:after
+    content: initial

@@ -1,0 +1,21 @@
+:root {
+  --net-color-primary: #777;
+  --net-color-secundary: #007BFF;
+  --net-color-sucess: #198754;
+  --net-color-danger: #dc3545;
+  --net-color-warning: #ffc107;
+  --net-color-info: #0dcaf0;
+  --net-color-light: #f8f9fa;
+  --net-color-dark: #343a40;
+  /*Color de botones*/
+  --net-btn-bg-primary: #007BFF;
+  --net-btn-bg-primary-hover: #0571dc;
+  /*esta configuracion de abajo aplica unicamente a header transparente*/
+  --color-header-link: var(--net-color-primary);
+  --color-header-link-hover: var(--net-color-secundary);
+  --color-header-transparent-link: #fff;
+  --color-header-transparent-link-hover: #fff;
+  /*Color de links para paginas*/
+  --net-color-link: #007BFF;
+  --net-color-link-hover: #0571dc;
+}/*# sourceMappingURL=colors.css.map */

@@ -1,0 +1,50 @@
+.ie-page 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    width: 90%
+    max-width: 750px
+    margin: auto
+    min-height: 100vh
+    gap: 35px
+    align-items: center
+    padding: 30px 0
+    @media (min-width:1025px)
+        gap: 25px
+        width: 720px
+    &__body
+        font-size: 20px
+        display: flex
+        flex-direction: column
+        gap: 10px
+    &__text
+        margin: 0
+        line-height: 25px
+        font-size: 16px
+    &__link
+        text-decoration: none
+        &--primary
+            font-weight: bold
+    &__link:hover
+        text-decoration: underline
+    &__title
+        font-size: 30px
+        font-weight: 700
+    &__subtitle
+        font-size: 18px
+        font-weight: 500
+    &__title,&__subtitle
+        text-align: center
+    &__container
+        display: flex
+        flex-direction: column
+        gap: 10px
+        margin-top: 25px
+        &--footer
+            align-items: center
+            justify-content: center
+            gap: 40px
+            margin-top: 40px
+    &__line
+        border-bottom: solid 1px #999999
+        width: 100%

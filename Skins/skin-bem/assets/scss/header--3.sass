@@ -1,0 +1,217 @@
+
+@import "header"
+/*HEADER3*/
+@media (max-width:1024px) 
+    .header
+        padding: 0 0
+        &--fixed
+            background: transparent
+            .header__includes
+                border-bottom: 0.1px solid #e6e6e6
+            &::after
+                content: ""
+                position: fixed
+                z-index: 0
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background: #d8d8d8b5                
+        &__includes
+            height: 55px
+            padding: 0px 20px
+            background: #fff
+        &__container
+            &--active
+                width: 280px
+                right: 0
+                top: 0
+                z-index: 1
+                position: fixed
+                background: #fff
+                margin-top: 0
+                max-height: 90vh
+                &::before 
+                    content: ""
+                    position: fixed
+                    left: inherit
+                    right: 0
+                    top: 0
+                    z-index: -1
+                    width: 280px
+                    height: 100vh
+                    background: #fff
+        &__burger
+            &--active
+                position: absolute
+                right: 22px
+                top: 22px
+                &::after
+                    content: initial
+        &__menu
+            &--top
+                &::before
+                    content: ""
+                    height: 0.5px
+                    width: 280px
+                    background: #e6e6e6
+                    display: block 
+            &--logo
+                padding: 20px 20px
+    ._navbar
+        &__list
+            padding-right: 10px
+        &__item
+            padding-left: 13px
+        &__link,
+        &__link:visited
+            padding:10px 16px
+        &__link,
+        &__link:visited,
+        &__link+span
+            color: var(--net-color-primary)
+            font-size: 14px
+            &:hover
+                border-left: 2px solid transparent 
+                color: var(--net-color-primary) 
+                border-radius: 10px
+                background-color: rgb(193 193 193 / 12%)
+        &__item--active
+            ._navbar__link
+                border-left: 2px solid transparent 
+                color: var(--net-color-primary)!important
+                border-radius: 10px
+                background-color: rgb(193 193 193 / 12%)
+        &__submenu
+            padding-left: 13px
+@media (min-width:1025px) 
+    ._navbar__item--last:hover ._navbar__submenu 
+        left: inherit
+        right: 0
+    .header__container::before
+        content: inherit
+    img#dnn_dnnLOGO_imgLogo 
+        max-width: initial
+        max-height: 40px
+    .header-container
+        box-shadow: 0px 0px 8px rgb(0 0 0 / 20%)
+        position: relative
+        padding-top: 36px
+    .header 
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 0 0
+        min-height: 65px
+        margin: auto
+        box-shadow: none
+        &__burger 
+            display: none
+
+        &__includes 
+            width: 250px
+
+        &__container 
+            max-width: 100%
+            display: flex
+            flex-direction: column
+            gap: 10px
+        &__menu
+            &--top
+                position: absolute
+                left: 0
+                right: 0
+                top: 0
+                background: #e7e7e7
+    ._navbar
+        &--top
+            width: 100%
+            max-width: 1164px
+            padding: 0 0
+            margin: auto
+            iconify-icon
+                margin-top: -1px
+        &__list 
+            display: flex
+            gap: 30px
+            align-items: center
+            justify-content: flex-end
+            &--top
+                height: 36px
+        &__item 
+            justify-content: flex-end
+            min-height: inherit
+            width: max-content
+            &--largeicon img
+                width: 13px
+                height: 13px
+            &--children
+                position: relative
+                &:hover::before
+                    content: ''
+                    padding: 10px
+                    position: absolute
+                    top: 22px
+                    left: -11px
+                    width: 95px
+                &:hover > ._navbar__submenu
+                    display: flex
+                    flex-direction: column
+                    gap: 5px
+                    
+            &--children a
+                gap: 6px
+            &--active
+                ._navbar__link
+                    color: var(--net-color-secundary)!important
+        &__link 
+            width: max-content
+            border-left: none
+            min-height: inherit
+            &--top
+                font-size: 13px
+            &--bottom
+                font-size: 18px
+        &__link:hover 
+            background: transparent
+            border-left: none
+        &__btn-page
+            padding: 0px
+            iconify-icon
+                font-size: 13px
+        &__submenu 
+            width: 100%
+            display: none
+            position: absolute
+            top: 35px
+            left: -20px
+            background: #fff
+            width: max-content
+            z-index: 10
+            &--top 
+                top: 30px
+                min-width: 150px
+                ._navbar__item
+                    display: block
+                    width: 100%
+                    padding: 9px
+                    max-width: inherit
+                    &:hover
+                        background-color: #f5f5f5 
+                ._navbar__link--top
+                    display: block
+                    width: 100%
+            &--bottom
+                padding: 0
+                ._navbar__item
+                    width: 100%
+                    min-width: 112px
+                    &:hover::before
+                        content: initial
+                ._navbar__link
+                    font-size: 13px
+                    padding: 12px 11px
+                    width: 100%
+                    justify-content: space-between
+                    &:hover
+                        background: #0000000a

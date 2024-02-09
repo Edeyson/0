@@ -1,0 +1,76 @@
+.link
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+    &--icon
+        color: var(--net-color-light)!important
+        background-color: var(--net-color-primary)
+        border-radius: 50%
+        height: 30px
+        width: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+            color: var(--net-color-light)!important
+            background-color: var(--net-color-secundary)
+            text-decoration: none
+.w-100
+    width: 100%
+.f-bold 
+    font-weight: bold
+.net-accordion
+    &__container 
+        padding: 10px 0 15px
+    &__title
+        padding: 10px 0
+        position: relative
+        font-size: 18px
+    &__title::after
+        content: "+"
+        position: absolute
+        right: 5px
+        top: 50%
+        width: 10px
+        height: 10px
+        color: #fff
+        font-size: 20px
+        transform: translate(0, -50%)
+        text-align: center
+        font-weight: bold
+        transition: 0.5s
+        background-color: var(--net-color-secundary)
+        padding: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 10px
+    &__child 
+        margin-bottom: 2px   
+        @media (max-width:768px)
+            width: 100%
+    &__child.active &__title::after
+        content: '-'
+    &__body
+        padding: 0 0
+        height: 0
+        position: relative
+        overflow: hidden
+    &__child.active &__body
+        display: block
+        padding: 10px 0
+        height: max-content
+  
+@media (min-width:769px) 
+    .net-accordion
+        &__title::after
+            content: inherit
+        &__body
+            height: max-content
+            padding: 10px 0
+            background-color: transparent    
+        &__title
+            background-color: transparent
+            font-weight: 500
+            font-size: 17px
+    

@@ -1,0 +1,35 @@
+@import "footer"
+/*footer 1*/
+@media (max-width:1024px) 
+    .footer-net
+        &__container
+            padding: 40px 25px 15px
+            gap: 16px
+        &__link
+            font-size: 14px
+        &__list
+            gap: 5px
+            &--logos 
+                gap: 15px
+@media (min-width:1025px)
+    .footer-net
+        padding-bottom: 20px
+        margin: 0 auto
+        &__container,
+        &__list
+            min-height: 50px
+            padding: 20px 0
+            gap:15px
+            &--logos
+                gap:25px
+        &__item
+            &--subpages
+                position: relative
+                &:not(.footer-net__item:last-child)
+                    &::after
+                        content: ''
+                        background: #e6e6e6
+                        height: 22px
+                        width: 1px
+                        position: absolute
+                        right: -8px
